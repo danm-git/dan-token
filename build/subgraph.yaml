@@ -1,12 +1,12 @@
 specVersion: 0.0.5
 schema:
-  file: ./schema.graphql
+  file: schema.graphql
 dataSources:
   - kind: ethereum
     name: DanToken
     network: base-testnet
     source:
-      address: '0xc7e732006379fb420C41F524A9e754B1e81D84f5'
+      address: "0xc7e732006379fb420C41F524A9e754B1e81D84f5"
       abi: DanToken
       startBlock: 998271
     mapping:
@@ -20,7 +20,7 @@ dataSources:
         - Transfer
       abis:
         - name: DanToken
-          file: ./abis/DanToken.json
+          file: DanToken\abis\DanToken.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,indexed uint256)
           handler: handleApproval
@@ -30,4 +30,4 @@ dataSources:
           handler: handleOwnershipTransferred
         - event: Transfer(indexed address,indexed address,indexed uint256)
           handler: handleTransfer
-      file: ./src/dan-token.ts
+      file: DanToken\DanToken.wasm
