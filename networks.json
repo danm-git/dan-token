@@ -1,0 +1,8 @@
+{
+  "base-testnet": {
+    "DanToken": {
+      "address": "0xc7e732006379fb420C41F524A9e754B1e81D84f5",
+      "startBlock": 998271
+    }
+  }
+}
